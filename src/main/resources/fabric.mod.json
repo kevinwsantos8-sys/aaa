@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "shadowkatana",
+  "version": "${version}",
+  "name": "Shadow Katana",
+  "description": "Uma katana preta e sombria com poderes de sombra: teleporte e invisibilidade.",
+  "authors": ["Voce"],
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.shadowkatana.ShadowKatanaMod"],
+    "client": ["com.shadowkatana.client.ShadowKatanaClient"]
+  },
+  "mixins": [
+    { "config": "shadowkatana.client.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": ["1.21", "1.21.1"],
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
